@@ -1,0 +1,12 @@
+{
+  "name": "Hương Việt AI",
+  "description": "Trang web ẩm thực Việt với Trợ lý AI thông minh hỗ trợ gọi đặt món, đặt bàn, thanh toán MoMo/ZaloPay và theo dõi shipper di động.",
+  "requestFramePermissions": [
+    "microphone",
+    "geolocation",
+    "identity-credentials-get"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

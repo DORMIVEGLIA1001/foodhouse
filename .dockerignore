@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+backend/.venv/
+backend/venv/
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Logs
+*.log
+frontend.err.log
+frontend.out.log
+backend/server.err.log
+backend/server.out.log
+
+# Environment (injected via docker-compose)
+.env
+backend/.env
+
+# IDE & OS
+.DS_Store
+.vscode/
+.idea/
+*.pyc
+__pycache__/
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Docs & metadata
+*.md
+metadata.json
+start-all.bat
+
+# Gemini
+.gemini/
