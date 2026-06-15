@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-space: "Space Grotesk", sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #fdfcf9; /* Brighter, cozier sun-kissed Vietnamese cream background */
+    color: #1c1917; /* Warm black */
+  }
+
+  /* Global Theme Overrides: Change formal luxury bronze '#8a6538' to warm cozy appetizing terracotta '#c05621' */
+  .text-\[\#8a6538\] {
+    color: #c05621 !important;
+  }
+  span.text-\[\#8a6538\] {
+    color: #c05621 !important;
+  }
+  h1.text-\[\#8a6538\] {
+    color: #c05621 !important;
+  }
+  h2.text-\[\#8a6538\] {
+    color: #c05621 !important;
+  }
+  h3.text-\[\#8a6538\] {
+    color: #c05621 !important;
+  }
+  h4.text-\[\#8a6538\] {
+    color: #c05621 !important;
+  }
+  strong.text-\[\#8a6538\] {
+    color: #c05621 !important;
+  }
+  
+  .bg-\[\#8a6538\] {
+    background-color: #c05621 !important;
+  }
+  .bg-amber-700 {
+    background-color: #c05621 !important; /* profile badges */
+  }
+  
+  .border-\[\#8a6538\] {
+    border-color: #c05621 !important;
+  }
+  
+  /* Semi-transparent backgrounds & borders */
+  .bg-\[\#8a6538\/15\] {
+    background-color: rgba(192, 86, 33, 0.15) !important;
+  }
+  .bg-\[\#8a6538\/10\] {
+    background-color: rgba(192, 86, 33, 0.1) !important;
+  }
+  .bg-\[\#8a6538\/5\] {
+    background-color: rgba(192, 86, 33, 0.05) !important;
+  }
+  
+  .border-\[\#8a6538\/20\] {
+    border-color: rgba(192, 86, 33, 0.20) !important;
+  }
+  .border-\[\#8a6538\/30\] {
+    border-color: rgba(192, 86, 33, 0.30) !important;
+  }
+  .border-\[\#8a6538\/25\] {
+    border-color: rgba(192, 86, 33, 0.25) !important;
+  }
+  
+  /* Inputs, focus states and hover behaviors */
+  .focus\:ring-\[\#8a6538\]:focus {
+    --tw-ring-color: #c05621 !important;
+  }
+  .focus\:border-\[\#8a6538\]:focus {
+    border-color: #c05621 !important;
+  }
+  .focus\:border-\[\#8a6538\/50\]:focus {
+    border-color: rgba(192, 86, 33, 0.50) !important;
+  }
+  .hover\:border-\[\#8a6538\/20\]:hover {
+    border-color: rgba(192, 86, 33, 0.20) !important;
+  }
+  .group:hover .group-hover\:text-\[\#8a6538\] {
+    color: #c05621 !important;
+  }
+  .group-hover\:text-\[\#8a6538\] {
+    color: #c05621 !important;
+  }
+  
+  /* Rich hover state adjustments: Change '#6c4d29' (dark luxury wood) to '#a73e12' (brighter friendly terracotta hover) */
+  .hover\:bg-\[\#6c4d29\]:hover {
+    background-color: #a73e12 !important;
+  }
+  
+  /* Make side rail and headers look warm, bright, and highly welcoming */
+  nav.w-20 {
+    background-color: #fcfbf8 !important; /* bright cozy beige */
+    border-right-color: #eae6db !important;
+  }
+  header.h-20 {
+    background-color: #fdfcf9/95 !important;
+    border-bottom-color: #eae6db !important;
+  }
+}
+
+/* Customized visual elements */
+.viet-wood-gradient {
+  background: linear-gradient(135deg, #1c1917 0%, #292524 100%);
+}
+
+.gold-accent {
+  color: #df9e1f;
+}
+
+.bg-gold-light {
+  background-color: #fef3c7;
+}
+
+.text-charcoal {
+  color: #1c1917;
+}
+
+/* Simulated Audio Wave Anim */
+@keyframes audio-wave-pulse {
+  0%, 100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1.2);
+  }
+}
+
+.wave-bar {
+  animation: audio-wave-pulse 1.2s ease-in-out infinite;
+}
+
+.wave-bar:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.wave-bar:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.wave-bar:nth-child(4) {
+  animation-delay: 0.45s;
+}
+
+.wave-bar:nth-child(5) {
+  animation-delay: 0.6s;
+}
+
+.wave-bar:nth-child(6) {
+  animation-delay: 0.25s;
+}
+
+.wave-bar:nth-child(7) {
+  animation-delay: 0.4s;
+}
